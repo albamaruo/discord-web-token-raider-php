@@ -5,7 +5,7 @@
 ## Features
 - 高速なapi接続およびリクエスト
 - 障がい者でも見やすいUI
-- vendor等不要、php実行環境さえあれば動く
+- composer等不要、php実行環境さえあれば動く
 - 高品質ランダムメンション、細かい設定箇所
 
 ## explanation
