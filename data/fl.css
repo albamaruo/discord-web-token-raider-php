@@ -1,0 +1,72 @@
+       .manzdev {
+            position: absolute;
+            top: 10%;
+            left: 90%;
+            width: 100px;
+            z-index: 50;
+            height: 100px;
+            opacity: 1;
+            transition: transform 0.3s ease;
+            pointer-events: auto;
+        }
+        .manzdev:hover {
+            transform: scale(1.1) rotate(30deg);
+        }
+        .tailwind {
+            position: absolute;
+            top: 20%;
+            right: 10%;
+            width: 80px;
+             z-index: 50;
+            height: 80px;
+            transition: transform 0.3s ease;
+            pointer-events: auto;
+        }
+        .tailwind:hover {
+            transform: scale(1.2) rotate(10deg);
+        }
+        .css {
+            position: absolute;
+            bottom: 20%;
+            right: 20%;
+             z-index: 30;
+            width: 70px;
+            height: 70px;
+            transition: transform 0.3s ease;
+            pointer-events: auto;
+        }
+        .css:hover {
+            transform: scale(1.1) translateY(-10px);
+        }
+.stars {
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  background-image:
+    radial-gradient(2px 2px at 20px 30px, white, transparent),
+    radial-gradient(1px 1px at 80px 120px, white, transparent),
+    radial-gradient(1px 1px at 200px 80px, white, transparent),
+    radial-gradient(2px 2px at 300px 200px, white, transparent);
+  background-repeat: repeat;
+  background-size: 400px 400px;
+  opacity: 0.7;
+  animation: starMove 60s linear infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translate(-50%, -50%) translateY(0px); }
+  50% { transform: translate(-50%, -50%) translateY(-30px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes starMove {
+  from { transform: translateY(0); }
+  to { transform: translateY(-400px); }
+}
+.image-container {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+}
